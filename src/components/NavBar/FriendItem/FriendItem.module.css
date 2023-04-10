@@ -1,0 +1,12 @@
+.friendsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .friendsList{
+        grid-template-columns: 1fr 1fr;
+    }
+}

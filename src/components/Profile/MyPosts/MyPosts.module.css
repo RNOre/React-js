@@ -1,0 +1,36 @@
+.myPost__wrapper{
+    padding-top: 400px;
+}
+.addPost{
+    background-color: #fdfdfe;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addPost__textArea{
+    resize: none;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    max-height: 100px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f7f8f9;
+}
+.addPost__btn{
+    height: 40px;
+    margin-left: 10px;
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid transparent;
+}
+.addPost__btn:hover{
+    cursor: pointer;
+    background-color: #eaeff8;
+    color:#2f65b9;
+}

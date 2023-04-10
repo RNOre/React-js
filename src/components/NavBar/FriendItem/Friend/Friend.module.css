@@ -1,0 +1,14 @@
+.friendCard{
+    padding: 10px;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.name{
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}

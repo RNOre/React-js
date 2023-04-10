@@ -1,0 +1,56 @@
+.item{
+    width: 90%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fdfdfe;
+    margin: 20px auto auto auto;
+}
+.userInfo{
+    display: flex;
+    align-items: center;
+}
+.userAvatar{
+    width: 70px;
+    height: 70px;
+
+}
+.avatar{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.postInfo{
+    display: flex;
+}
+.userName{
+    font-weight: 400;
+    font-size: 18px;
+}
+.time{
+    font-weight: 200;
+}
+.typeOfPost{
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+.postText{
+    padding: 20px 10px;
+    overflow-wrap: anywhere;
+}
+.like{
+    display: inline;
+}
+.like:hover{
+    cursor: pointer;
+}
+.like:before{
+    content: '\2661';
+    padding: 0 10px;
+    font-size: 30px;
+    color: red;
+}
+.like:before:hover{
+    background-color: red;
+}

@@ -1,0 +1,177 @@
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+    height: 12px;
+    width: 7px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+    background: #eaeff8;
+    border-radius: 5px;
+}
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+    background-color: #2f65b9 ;
+    border-radius: 5px;
+    border: 3px solid transparent;
+}
+
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding: 20px;
+}
+.dialog{
+    margin-bottom: 10px;
+    background-color: #fdfdfe;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dialog a{
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+.dialogsItems{
+
+    grid-row: 1/span 3;
+}
+.dialog:hover{
+    background-color: #eaeff8;
+}
+.dialog a.active{
+
+}
+a.active{
+    background-color: #2f65b9;
+    color: #ffffff;
+}
+.messages{
+    grid-column: 2;
+    padding: 10px;
+    margin-bottom: 5px;
+    /*background-color: #f7f8f9;*/
+    margin-left: 20px;
+    border-radius: 5px;
+    display: block;
+    max-height: 65vh;
+    overflow: auto;
+}
+.messageFromMeWrapper{
+    text-align: right;
+}
+.messageToMeWrapper{
+    text-align: left;
+}
+.messageToMe{
+    padding:15px 25px;
+    margin-bottom: 20px;
+    background-color: #d4d8e0;
+    border-radius: 15px;
+    position: relative;
+    display: inline-block;
+    min-width: 10%;
+    max-width: 60%;
+    text-align: left;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+.messageToMe:before{
+    content: " ";
+    position: absolute;
+    bottom: -12px;
+    left: 4px;
+    border: 15px solid transparent;
+    border-left: 15px solid #d4d8e0;
+}
+.messageFromMe{
+    padding: 15px 25px;
+    background-color: #aab0c4;
+    border-radius: 15px;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    min-width: 10%;
+    max-width: 60%;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+.messageFromMe:after{
+    content: " ";
+    position: absolute;
+    bottom: -12px;
+    right: 4px;
+    border: 15px solid transparent;
+    border-right: 15px solid #aab0c4;
+}
+.messageForm{
+    grid-column: 2;
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.messageForm__textArea{
+    resize: none;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    max-height: 100px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f7f8f9;
+}
+.messageForm__btn{
+    height: 0px;
+    border: 15px solid transparent;
+    border-left: 30px solid #2f65b9 ;
+    margin-left: 10px;
+    position: relative;
+    border-radius: 15px;
+}
+.messageForm__btn:hover{
+    cursor: pointer;
+    border: 15px solid transparent;
+    border-left: 30px solid #2a57a1;
+}
+.messageForm__btn:before{
+    content: " ";
+    border: 5px solid transparent;
+    border-left: 15px solid #fdfdfe;
+    position: absolute;
+    left: -30px;
+    bottom: -5px;
+}
+
+.statusBar{
+    grid-column: 2;
+    height: 50px;
+    text-align: center;
+    border-bottom:2px solid #aab0c4;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.statusBar__interlocutor{
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+.name{
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0px;
+}
+.statusBar__online{
+    font-weight:200;
+}
